@@ -1,21 +1,22 @@
 import React from 'react';
-import Roles from '../components/Roles';
+import { roles } from '../data/sampleData';
 
-export default function RolesPage(){
+export default function RolesPage() {
   return (
     <section className="py-5">
       <div className="container">
-        <h2 className="text-center mb-4">User Roles & Permissions</h2>
-        <p className="text-center text-muted">Overview of roles and what they can do on the platform.</p>
-        <Roles />
-        <div className="mt-4">
-          <h5>Role details</h5>
-          <ul>
-            <li><strong>Admin:</strong> Manage users, listings and content moderation.</li>
-            <li><strong>Host:</strong> Add listings, manage calendar & pricing.</li>
-            <li><strong>Tourist:</strong> Search, book, and review stays.</li>
-            <li><strong>Guide:</strong> Provide local experiences and tours.</li>
-          </ul>
+        <h2 className="text-center mb-4">Platform Roles</h2>
+        <div className="row">
+          {roles.map(r => (
+            <div className="col-md-3 mb-3" key={r.id}>
+              <div className="card text-center bg-dark text-light h-100">
+                <div className="card-body">
+                  <h5>{r.title}</h5>
+                  <p>{r.description}</p>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

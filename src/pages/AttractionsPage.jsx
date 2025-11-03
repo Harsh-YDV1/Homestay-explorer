@@ -1,24 +1,20 @@
 import React from 'react';
+import { attractions } from '../data/sampleData';
 
-const ATTRACTIONS = [
-  { id:1, title:'Kanaka Durga Temple', desc:'Sacred temple on Indrakeeladri Hill. Best during Dasara.', img:'https://source.unsplash.com/random/400x250/?temple' },
-  { id:2, title:'Bhavani Island', desc:'A scenic island on the Krishna River.', img:'https://source.unsplash.com/random/400x250/?island' },
-  { id:3, title:'Subbaiah Park', desc:'Relaxing greens and local food stalls.', img:'https://source.unsplash.com/random/400x250/?park' }
-];
-
-export default function AttractionsPage(){
+export default function AttractionsPage() {
   return (
     <section className="py-5">
       <div className="container">
-        <h2 className="text-center mb-4">Attractions</h2>
+        <h2 className="text-center mb-4">Local Attractions</h2>
         <div className="row">
-          {ATTRACTIONS.map(a => (
-            <div className="col-md-4 mb-3" key={a.id}>
-              <div className="card">
-                <img src={a.img} className="card-img-top" alt={a.title} />
+          {attractions.map(a => (
+            <div className="col-md-4 mb-4" key={a.id}>
+              <div className="card h-100">
+                <img src={a.image} alt={a.name} className="card-img-top" />
                 <div className="card-body">
-                  <h5 className="card-title">{a.title}</h5>
-                  <p className="card-text">{a.desc}</p>
+                  <h5>{a.name}</h5>
+                  <p>{a.description}</p>
+                  <p className="text-muted">{a.location}</p>
                 </div>
               </div>
             </div>
