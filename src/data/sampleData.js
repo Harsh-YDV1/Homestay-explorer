@@ -38,7 +38,7 @@ export const listings = [
     price: 50,
     description: "Near Kanaka Durga Temple. Ideal for families and solo travelers.",
     location: "Vijayawada, Andhra Pradesh",
-    image:"https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=500&q=70"
+    image:"https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=900&q=80"
 ,
     rating: 4.7
   },
@@ -49,7 +49,8 @@ export const listings = [
     price: 55,
     description: "Beautiful riverside stay with balcony view of the Krishna River.",
     location: "Vijayawada, Andhra Pradesh",
-    image: "C:\Users\HP\Pictures\Screenshots\Screenshot 2025-10-21 224748.png",
+    image: "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf"
+,
     rating: 4.8
   },
   {
@@ -59,7 +60,7 @@ export const listings = [
     price: 40,
     description: "Eco-friendly stay near Kondapalli Fort surrounded by greenery.",
     location: "Vijayawada outskirts, Andhra Pradesh",
-    image: "https://source.unsplash.com/800x450/?green,eco,homestay",
+    image: "https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=900&q=80",
     rating: 4.6
   },
 
@@ -266,7 +267,7 @@ export const attractions = [
     name: "Rumtek Monastery",
     description: "Peaceful Buddhist monastery showcasing Tibetan art.",
     location: "Rumtek, Sikkim",
-    image: "https://source.unsplash.com/400x250/?monastery,rumtek"
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
   }
 ];
 
