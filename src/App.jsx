@@ -16,7 +16,7 @@ import HostProfile from "./pages/HostProfile";
 import NotFound from "./pages/NotFound";
 import LocalGuidesPage from "./pages/LocalGuidesPage";
 import AdminPage from "./pages/AdminPage";
-import HostsPage from "./pages/HostsPage"; // ✅ NEW
+import HostsPage from "./pages/Hostspage"; // ✅ NEW
 
 export default function App() {
   return (
