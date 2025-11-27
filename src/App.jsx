@@ -15,6 +15,8 @@ import ListingDetails from "./pages/ListingDetails";
 import HostProfile from "./pages/HostProfile";
 import NotFound from "./pages/NotFound";
 import LocalGuidesPage from "./pages/LocalGuidesPage";
+import AdminPage from "./pages/AdminPage";
+import HostsPage from "./pages/HostsPage"; // ✅ NEW
 
 export default function App() {
   return (
@@ -32,6 +34,8 @@ export default function App() {
             <Route path="/listing/:id" element={<ListingDetails />} />
             <Route path="/host/:id" element={<HostProfile />} />
             <Route path="/local-guides" element={<LocalGuidesPage />} />
+            <Route path="/admin" element={<AdminPage />} />
+            <Route path="/hosts" element={<HostsPage />} /> {/* ✅ NEW HOSTS PAGE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
